@@ -1,0 +1,886 @@
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/alima/OneDrive/Documents/AMK/module4/module4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_top' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/alima/OneDrive/Documents/AMK/module4/module4.sim/sim_1/behav/xsim/imem.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/alima/OneDrive/Documents/AMK/module4/module4.sim/sim_1/behav/xsim/imem.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/alima/OneDrive/Documents/AMK/module4/module4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_top_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/alima/OneDrive/Documents/AMK/module4/module4.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 46578c6764454099b078d3402d0c1393 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/alima/OneDrive/Documents/AMK/module4/module4.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_top_behav -key {Behavioral:sim_1:Functional:tb_top} -tclbatch {tb_top.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source tb_top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+
+T=30000 ns
+=============================================
+IF Stage:
+  PC = 00000000 | instr = 00500093
+ID Stage:
+  PC_ID   = 00000000 | instr_ID = 00000000| Bsel = 1 | PCwrite: 1 | ContWrite: 1 Microsoft.QuickAction.WiFi| IFIDwrite: 1 | IDEXmemread: 0
+  data1 = 00000000 | data2 = 00000000
+  rs1 = 0 | rs2 = 0 | IDEXrd = 0 | IFIDr1 = 0 | IFIDr2 = 0 | flush: 0
+  RegWEn = 1 | ALUsel = 0 | Bsel = 1 | WBsel = 00 | MemRW = 0 | immsel = 0 |
+EX Stage:
+  PC_EX   = 00000000 | instr_EX = 00000000, Bsel_EX = 0
+  a = 00000000 | b = 00000000 | a_fwd = 00000000 | b_fwd = 00000000 | ALU_out = 00000000 | IDEXrd: 00 | rs1_EX: 00 | rs2_EX: 00 | flush: 0
+  Eq = 1 | Lt = 0 | BrUn = 0, a_fwd = 00000000 | b_fwd = 00000000
+  RegWEn_EX = 0 | ALUsel_EX = 0 | Bsel_EX = 0 | Asel_EX  =0 |WBsel_EX = 00 | MemRW_EX = 0 | PCsel_cont = 0 | ForwardA: 00 | ForwardB: 00 | Imm_EX = 00000000
+MEM Stage:
+  PC_MEM   = 00000000 | instr_MEM = 00000000
+  ALU_out = 00000000 | dmem_out = 00000000 | func3 = 0 | addr = 00000000 | EXMEMrd =   0
+  RegWEn_MEM = 0 | WBsel_MEM = 00 | MemRW_MEM = 0 | PCsel_MEM = 0
+WB Stage:
+  PC_WB   = 00000000 | instr_WB = 00000000
+  ALU_WB = 00000000 | dmem_WB = 00000000 | DataW = 00000000
+  RegWEn_WB = 0 | WBsel_WB = 00 | PCsel_WB = 0 | MEMWBrd:  0 | RegWEn_WB: 0 
+Registers:
+  x 0 = 00000000
+  x 1 = xxxxxxxx
+  x 2 = xxxxxxxx
+  x 3 = xxxxxxxx
+  x 4 = xxxxxxxx
+  x 5 = xxxxxxxx
+  x 6 = xxxxxxxx
+  x 7 = xxxxxxxx
+memory[0]: 00000000
+=============================================
+
+
+T=50000 ns
+=============================================
+IF Stage:
+  PC = 00000004 | instr = fff00213
+ID Stage:
+  PC_ID   = 00000000 | instr_ID = 00500093| Bsel = 1 | PCwrite: 0 | ContWrite: 0 Microsoft.QuickAction.WiFi| IFIDwrite: 0 | IDEXmemread: 1
+  data1 = 00000000 | data2 = xxxxxxxx
+  rs1 = 0 | rs2 = 5 | IDEXrd = 0 | IFIDr1 = 0 | IFIDr2 = 5 | flush: 0
+  RegWEn = 1 | ALUsel = 0 | Bsel = 1 | WBsel = 01 | MemRW = 0 | immsel = 0 |
+EX Stage:
+  PC_EX   = 00000000 | instr_EX = 00000000, Bsel_EX = 1
+  a = 00000000 | b = 00000000 | a_fwd = 00000000 | b_fwd = 00000000 | ALU_out = 00000000 | IDEXrd: 00 | rs1_EX: 00 | rs2_EX: 00 | flush: 0
+  Eq = 1 | Lt = 0 | BrUn = 0, a_fwd = 00000000 | b_fwd = 00000000
+  RegWEn_EX = 1 | ALUsel_EX = 0 | Bsel_EX = 1 | Asel_EX  =0 |WBsel_EX = 00 | MemRW_EX = 0 | PCsel_cont = 0 | ForwardA: 00 | ForwardB: 00 | Imm_EX = 00000000
+MEM Stage:
+  PC_MEM   = 00000000 | instr_MEM = 00000000
+  ALU_out = 00000000 | dmem_out = 00000000 | func3 = 0 | addr = 00000000 | EXMEMrd =   0
+  RegWEn_MEM = 0 | WBsel_MEM = 00 | MemRW_MEM = 0 | PCsel_MEM = 0
+WB Stage:
+  PC_WB   = 00000004 | instr_WB = 00000000
+  ALU_WB = 00000000 | dmem_WB = 00000000 | DataW = 00000000
+  RegWEn_WB = 0 | WBsel_WB = 00 | PCsel_WB = 0 | MEMWBrd:  0 | RegWEn_WB: 0 
+Registers:
+  x 0 = 00000000
+  x 1 = xxxxxxxx
+  x 2 = xxxxxxxx
+  x 3 = xxxxxxxx
+  x 4 = xxxxxxxx
+  x 5 = xxxxxxxx
+  x 6 = xxxxxxxx
+  x 7 = xxxxxxxx
+memory[0]: 00000000
+=============================================
+
+
+T=70000 ns
+=============================================
+IF Stage:
+  PC = 00000004 | instr = fff00213
+ID Stage:
+  PC_ID   = 00000000 | instr_ID = 00500093| Bsel = 1 | PCwrite: 1 | ContWrite: 1 Microsoft.QuickAction.WiFi| IFIDwrite: 1 | IDEXmemread: 0
+  data1 = 00000000 | data2 = xxxxxxxx
+  rs1 = 0 | rs2 = 5 | IDEXrd = 1 | IFIDr1 = 0 | IFIDr2 = 5 | flush: 0
+  RegWEn = 1 | ALUsel = 0 | Bsel = 1 | WBsel = 01 | MemRW = 0 | immsel = 0 |
+EX Stage:
+  PC_EX   = 00000000 | instr_EX = 00500093, Bsel_EX = 1
+  a = 00000000 | b = 00000005 | a_fwd = 00000000 | b_fwd = 00000005 | ALU_out = 00000005 | IDEXrd: 01 | rs1_EX: 00 | rs2_EX: 05 | flush: 0
+  Eq = x | Lt = x | BrUn = 0, a_fwd = 00000000 | b_fwd = 00000005
+  RegWEn_EX = 0 | ALUsel_EX = 0 | Bsel_EX = 1 | Asel_EX  =0 |WBsel_EX = 01 | MemRW_EX = 0 | PCsel_cont = 0 | ForwardA: 00 | ForwardB: 00 | Imm_EX = 00000005
+MEM Stage:
+  PC_MEM   = 00000000 | instr_MEM = 00000000
+  ALU_out = 00000000 | dmem_out = 00000000 | func3 = 0 | addr = 00000000 | EXMEMrd =   0
+  RegWEn_MEM = 1 | WBsel_MEM = 00 | MemRW_MEM = 0 | PCsel_MEM = 0
+WB Stage:
+  PC_WB   = 00000004 | instr_WB = 00000000
+  ALU_WB = 00000000 | dmem_WB = 00000000 | DataW = 00000000
+  RegWEn_WB = 0 | WBsel_WB = 00 | PCsel_WB = 0 | MEMWBrd:  0 | RegWEn_WB: 0 
+Registers:
+  x 0 = 00000000
+  x 1 = xxxxxxxx
+  x 2 = xxxxxxxx
+  x 3 = xxxxxxxx
+  x 4 = xxxxxxxx
+  x 5 = xxxxxxxx
+  x 6 = xxxxxxxx
+  x 7 = xxxxxxxx
+memory[0]: 00000000
+=============================================
+
+
+T=90000 ns
+=============================================
+IF Stage:
+  PC = 00000008 | instr = 00500113
+ID Stage:
+  PC_ID   = 00000004 | instr_ID = fff00213| Bsel = 1 | PCwrite: 1 | ContWrite: 1 Microsoft.QuickAction.WiFi| IFIDwrite: 1 | IDEXmemread: 0
+  data1 = 00000000 | data2 = xxxxxxxx
+  rs1 = 0 | rs2 = 31 | IDEXrd = 1 | IFIDr1 = 0 | IFIDr2 = 31 | flush: 0
+  RegWEn = 1 | ALUsel = 0 | Bsel = 1 | WBsel = 01 | MemRW = 0 | immsel = 0 |
+EX Stage:
+  PC_EX   = 00000000 | instr_EX = 00500093, Bsel_EX = 1
+  a = 00000000 | b = 00000005 | a_fwd = 00000000 | b_fwd = 00000005 | ALU_out = 00000005 | IDEXrd: 01 | rs1_EX: 00 | rs2_EX: 05 | flush: 0
+  Eq = x | Lt = x | BrUn = 0, a_fwd = 00000000 | b_fwd = 00000005
+  RegWEn_EX = 1 | ALUsel_EX = 0 | Bsel_EX = 1 | Asel_EX  =0 |WBsel_EX = 01 | MemRW_EX = 0 | PCsel_cont = 0 | ForwardA: 00 | ForwardB: 00 | Imm_EX = 00000005
+MEM Stage:
+  PC_MEM   = 00000000 | instr_MEM = 00500093
+  ALU_out = 00000005 | dmem_out = 00000000 | func3 = 0 | addr = 00000005 | EXMEMrd =   1
+  RegWEn_MEM = 0 | WBsel_MEM = 01 | MemRW_MEM = 0 | PCsel_MEM = 0
+WB Stage:
+  PC_WB   = 00000004 | instr_WB = 00000000
+  ALU_WB = 00000000 | dmem_WB = 00000000 | DataW = 00000000
+  RegWEn_WB = 1 | WBsel_WB = 00 | PCsel_WB = 0 | MEMWBrd:  0 | RegWEn_WB: 1 
+Registers:
+  x 0 = 00000000
+  x 1 = xxxxxxxx
+  x 2 = xxxxxxxx
+  x 3 = xxxxxxxx
+  x 4 = xxxxxxxx
+  x 5 = xxxxxxxx
+  x 6 = xxxxxxxx
+  x 7 = xxxxxxxx
+memory[0]: 00000000
+=============================================
+
+
+T=110000 ns
+=============================================
+IF Stage:
+  PC = 0000000c | instr = 00110463
+ID Stage:
+  PC_ID   = 00000008 | instr_ID = 00500113| Bsel = 1 | PCwrite: 1 | ContWrite: 1 Microsoft.QuickAction.WiFi| IFIDwrite: 1 | IDEXmemread: 0
+  data1 = 00000000 | data2 = xxxxxxxx
+  rs1 = 0 | rs2 = 5 | IDEXrd = 4 | IFIDr1 = 0 | IFIDr2 = 5 | flush: 0
+  RegWEn = 1 | ALUsel = 0 | Bsel = 1 | WBsel = 01 | MemRW = 0 | immsel = 0 |
+EX Stage:
+  PC_EX   = 00000004 | instr_EX = fff00213, Bsel_EX = 1
+  a = 00000000 | b = ffffffff | a_fwd = 00000000 | b_fwd = ffffffff | ALU_out = ffffffff | IDEXrd: 04 | rs1_EX: 00 | rs2_EX: 1f | flush: 0
+  Eq = x | Lt = x | BrUn = 0, a_fwd = 00000000 | b_fwd = ffffffff
+  RegWEn_EX = 1 | ALUsel_EX = 0 | Bsel_EX = 1 | Asel_EX  =0 |WBsel_EX = 01 | MemRW_EX = 0 | PCsel_cont = 0 | ForwardA: 00 | ForwardB: 00 | Imm_EX = ffffffff
+MEM Stage:
+  PC_MEM   = 00000000 | instr_MEM = 00500093
+  ALU_out = 00000005 | dmem_out = 00000000 | func3 = 0 | addr = 00000005 | EXMEMrd =   1
+  RegWEn_MEM = 1 | WBsel_MEM = 01 | MemRW_MEM = 0 | PCsel_MEM = 0
+WB Stage:
+  PC_WB   = 00000004 | instr_WB = 00500093
+  ALU_WB = 00000005 | dmem_WB = 00000000 | DataW = 00000005
+  RegWEn_WB = 0 | WBsel_WB = 01 | PCsel_WB = 0 | MEMWBrd:  1 | RegWEn_WB: 0 
+Registers:
+  x 0 = 00000000
+  x 1 = xxxxxxxx
+  x 2 = xxxxxxxx
+  x 3 = xxxxxxxx
+  x 4 = xxxxxxxx
+  x 5 = xxxxxxxx
+  x 6 = xxxxxxxx
+  x 7 = xxxxxxxx
+memory[0]: 00000000
+=============================================
+
+
+T=130000 ns
+=============================================
+IF Stage:
+  PC = 00000010 | instr = 002081b3
+ID Stage:
+  PC_ID   = 0000000c | instr_ID = 00110463| Bsel = 1 | PCwrite: 1 | ContWrite: 1 Microsoft.QuickAction.WiFi| IFIDwrite: 1 | IDEXmemread: 0
+  data1 = xxxxxxxx | data2 = 00000005
+  rs1 = 2 | rs2 = 1 | IDEXrd = 2 | IFIDr1 = 2 | IFIDr2 = 1 | flush: 0
+  RegWEn = 0 | ALUsel = 0 | Bsel = 1 | WBsel = 00 | MemRW = 0 | immsel = 3 |
+EX Stage:
+  PC_EX   = 00000008 | instr_EX = 00500113, Bsel_EX = 1
+  a = 00000000 | b = 00000005 | a_fwd = 00000000 | b_fwd = 00000005 | ALU_out = 00000005 | IDEXrd: 02 | rs1_EX: 00 | rs2_EX: 05 | flush: 0
+  Eq = x | Lt = x | BrUn = 0, a_fwd = 00000000 | b_fwd = 00000005
+  RegWEn_EX = 1 | ALUsel_EX = 0 | Bsel_EX = 1 | Asel_EX  =0 |WBsel_EX = 01 | MemRW_EX = 0 | PCsel_cont = 0 | ForwardA: 00 | ForwardB: 00 | Imm_EX = 00000005
+MEM Stage:
+  PC_MEM   = 00000004 | instr_MEM = fff00213
+  ALU_out = ffffffff | dmem_out = 00000000 | func3 = 0 | addr = ffffffff | EXMEMrd =   4
+  RegWEn_MEM = 1 | WBsel_MEM = 01 | MemRW_MEM = 0 | PCsel_MEM = 0
+WB Stage:
+  PC_WB   = 00000004 | instr_WB = 00500093
+  ALU_WB = 00000005 | dmem_WB = 00000000 | DataW = 00000005
+  RegWEn_WB = 1 | WBsel_WB = 01 | PCsel_WB = 0 | MEMWBrd:  1 | RegWEn_WB: 1 
+Registers:
+  x 0 = 00000000
+  x 1 = 00000005
+  x 2 = xxxxxxxx
+  x 3 = xxxxxxxx
+  x 4 = xxxxxxxx
+  x 5 = xxxxxxxx
+  x 6 = xxxxxxxx
+  x 7 = xxxxxxxx
+memory[0]: 00000000
+=============================================
+
+
+T=150000 ns
+=============================================
+IF Stage:
+  PC = 00000014 | instr = 00220233
+ID Stage:
+  PC_ID   = 00000010 | instr_ID = 002081b3| Bsel = 0 | PCwrite: 1 | ContWrite: 1 Microsoft.QuickAction.WiFi| IFIDwrite: 1 | IDEXmemread: 0
+  data1 = 00000005 | data2 = xxxxxxxx
+  rs1 = 1 | rs2 = 2 | IDEXrd = 8 | IFIDr1 = 1 | IFIDr2 = 2 | flush: 1
+  RegWEn = 1 | ALUsel = 0 | Bsel = 0 | WBsel = 01 | MemRW = 0 | immsel = 0 |
+EX Stage:
+  PC_EX   = 0000000c | instr_EX = 00110463, Bsel_EX = 1
+  a = 0000000c | b = 00000008 | a_fwd = 00000005 | b_fwd = 00000008 | ALU_out = 00000014 | IDEXrd: 08 | rs1_EX: 02 | rs2_EX: 01 | flush: 1
+  Eq = 1 | Lt = 0 | BrUn = 0, a_fwd = 00000005 | b_fwd = 00000008
+  RegWEn_EX = 0 | ALUsel_EX = 0 | Bsel_EX = 1 | Asel_EX  =1 |WBsel_EX = 00 | MemRW_EX = 0 | PCsel_cont = 1 | ForwardA: 10 | ForwardB: 00 | Imm_EX = 00000008
+MEM Stage:
+  PC_MEM   = 00000008 | instr_MEM = 00500113
+  ALU_out = 00000005 | dmem_out = xxxxxxxx | func3 = 0 | addr = 00000005 | EXMEMrd =   2
+  RegWEn_MEM = 1 | WBsel_MEM = 01 | MemRW_MEM = 0 | PCsel_MEM = 0
+WB Stage:
+  PC_WB   = 00000008 | instr_WB = fff00213
+  ALU_WB = ffffffff | dmem_WB = xxxxxxxx | DataW = ffffffff
+  RegWEn_WB = 1 | WBsel_WB = 01 | PCsel_WB = 0 | MEMWBrd:  4 | RegWEn_WB: 1 
+Registers:
+  x 0 = 00000000
+  x 1 = 00000005
+  x 2 = xxxxxxxx
+  x 3 = xxxxxxxx
+  x 4 = ffffffff
+  x 5 = xxxxxxxx
+  x 6 = xxxxxxxx
+  x 7 = xxxxxxxx
+memory[0]: 00000000
+=============================================
+
+
+T=170000 ns
+=============================================
+IF Stage:
+  PC = 00000014 | instr = 00220233
+ID Stage:
+  PC_ID   = 00000000 | instr_ID = 00000000| Bsel = 1 | PCwrite: 1 | ContWrite: 1 Microsoft.QuickAction.WiFi| IFIDwrite: 1 | IDEXmemread: 0
+  data1 = 00000000 | data2 = 00000000
+  rs1 = 0 | rs2 = 0 | IDEXrd = 0 | IFIDr1 = 0 | IFIDr2 = 0 | flush: 0
+  RegWEn = 1 | ALUsel = 0 | Bsel = 1 | WBsel = 00 | MemRW = 0 | immsel = 0 |
+EX Stage:
+  PC_EX   = 00000000 | instr_EX = 00000000, Bsel_EX = 0
+  a = 00000000 | b = 00000000 | a_fwd = 00000000 | b_fwd = 00000000 | ALU_out = 00000000 | IDEXrd: 00 | rs1_EX: 00 | rs2_EX: 00 | flush: 0
+  Eq = 1 | Lt = 0 | BrUn = 0, a_fwd = 00000000 | b_fwd = 00000000
+  RegWEn_EX = 0 | ALUsel_EX = 0 | Bsel_EX = 0 | Asel_EX  =0 |WBsel_EX = 00 | MemRW_EX = 0 | PCsel_cont = 0 | ForwardA: 00 | ForwardB: 00 | Imm_EX = 00000000
+MEM Stage:
+  PC_MEM   = 0000000c | instr_MEM = 00110463
+  ALU_out = 00000014 | dmem_out = 00000000 | func3 = 0 | addr = 00000014 | EXMEMrd =   8
+  RegWEn_MEM = 0 | WBsel_MEM = 00 | MemRW_MEM = 0 | PCsel_MEM = 1
+WB Stage:
+  PC_WB   = 0000000c | instr_WB = 00500113
+  ALU_WB = 00000005 | dmem_WB = 00000000 | DataW = 00000005
+  RegWEn_WB = 1 | WBsel_WB = 01 | PCsel_WB = 0 | MEMWBrd:  2 | RegWEn_WB: 1 
+Registers:
+  x 0 = 00000000
+  x 1 = 00000005
+  x 2 = 00000005
+  x 3 = xxxxxxxx
+  x 4 = ffffffff
+  x 5 = xxxxxxxx
+  x 6 = xxxxxxxx
+  x 7 = xxxxxxxx
+memory[0]: 00000000
+=============================================
+
+
+T=190000 ns
+=============================================
+IF Stage:
+  PC = 00000018 | instr = 00102023
+ID Stage:
+  PC_ID   = 00000014 | instr_ID = 00220233| Bsel = 0 | PCwrite: 1 | ContWrite: 1 Microsoft.QuickAction.WiFi| IFIDwrite: 1 | IDEXmemread: 1
+  data1 = ffffffff | data2 = 00000005
+  rs1 = 4 | rs2 = 2 | IDEXrd = 0 | IFIDr1 = 4 | IFIDr2 = 2 | flush: 0
+  RegWEn = 1 | ALUsel = 0 | Bsel = 0 | WBsel = 01 | MemRW = 0 | immsel = 0 |
+EX Stage:
+  PC_EX   = 00000000 | instr_EX = 00000000, Bsel_EX = 1
+  a = 00000000 | b = 00000000 | a_fwd = 00000000 | b_fwd = 00000000 | ALU_out = 00000000 | IDEXrd: 00 | rs1_EX: 00 | rs2_EX: 00 | flush: 0
+  Eq = 1 | Lt = 0 | BrUn = 0, a_fwd = 00000000 | b_fwd = 00000000
+  RegWEn_EX = 1 | ALUsel_EX = 0 | Bsel_EX = 1 | Asel_EX  =0 |WBsel_EX = 00 | MemRW_EX = 0 | PCsel_cont = 0 | ForwardA: 00 | ForwardB: 00 | Imm_EX = 00000000
+MEM Stage:
+  PC_MEM   = 00000000 | instr_MEM = 00000000
+  ALU_out = 00000000 | dmem_out = 00000000 | func3 = 0 | addr = 00000000 | EXMEMrd =   0
+  RegWEn_MEM = 0 | WBsel_MEM = 00 | MemRW_MEM = 0 | PCsel_MEM = 0
+WB Stage:
+  PC_WB   = 00000010 | instr_WB = 00110463
+  ALU_WB = 00000014 | dmem_WB = 00000000 | DataW = 00000000
+  RegWEn_WB = 0 | WBsel_WB = 00 | PCsel_WB = 1 | MEMWBrd:  8 | RegWEn_WB: 0 
+Registers:
+  x 0 = 00000000
+  x 1 = 00000005
+  x 2 = 00000005
+  x 3 = xxxxxxxx
+  x 4 = ffffffff
+  x 5 = xxxxxxxx
+  x 6 = xxxxxxxx
+  x 7 = xxxxxxxx
+memory[0]: 00000000
+=============================================
+
+
+T=210000 ns
+=============================================
+IF Stage:
+  PC = 0000001c | instr = 00002283
+ID Stage:
+  PC_ID   = 00000018 | instr_ID = 00102023| Bsel = 1 | PCwrite: 1 | ContWrite: 1 Microsoft.QuickAction.WiFi| IFIDwrite: 1 | IDEXmemread: 0
+  data1 = 00000000 | data2 = 00000005
+  rs1 = 0 | rs2 = 1 | IDEXrd = 4 | IFIDr1 = 0 | IFIDr2 = 1 | flush: 0
+  RegWEn = 0 | ALUsel = 0 | Bsel = 1 | WBsel = 00 | MemRW = 1 | immsel = 1 |
+EX Stage:
+  PC_EX   = 00000014 | instr_EX = 00220233, Bsel_EX = 0
+  a = ffffffff | b = 00000005 | a_fwd = ffffffff | b_fwd = 00000005 | ALU_out = 00000004 | IDEXrd: 04 | rs1_EX: 04 | rs2_EX: 02 | flush: 0
+  Eq = 0 | Lt = 1 | BrUn = 0, a_fwd = ffffffff | b_fwd = 00000005
+  RegWEn_EX = 1 | ALUsel_EX = 0 | Bsel_EX = 0 | Asel_EX  =0 |WBsel_EX = 01 | MemRW_EX = 0 | PCsel_cont = 0 | ForwardA: 00 | ForwardB: 00 | Imm_EX = 00000002
+MEM Stage:
+  PC_MEM   = 00000000 | instr_MEM = 00000000
+  ALU_out = 00000000 | dmem_out = 00000000 | func3 = 0 | addr = 00000000 | EXMEMrd =   0
+  RegWEn_MEM = 1 | WBsel_MEM = 00 | MemRW_MEM = 0 | PCsel_MEM = 0
+WB Stage:
+  PC_WB   = 00000004 | instr_WB = 00000000
+  ALU_WB = 00000000 | dmem_WB = 00000000 | DataW = 00000000
+  RegWEn_WB = 0 | WBsel_WB = 00 | PCsel_WB = 0 | MEMWBrd:  0 | RegWEn_WB: 0 
+Registers:
+  x 0 = 00000000
+  x 1 = 00000005
+  x 2 = 00000005
+  x 3 = xxxxxxxx
+  x 4 = ffffffff
+  x 5 = xxxxxxxx
+  x 6 = xxxxxxxx
+  x 7 = xxxxxxxx
+memory[0]: 00000000
+=============================================
+
+
+T=230000 ns
+=============================================
+IF Stage:
+  PC = 00000020 | instr = xxxxxxxx
+ID Stage:
+  PC_ID   = 0000001c | instr_ID = 00002283| Bsel = 1 | PCwrite: 1 | ContWrite: 1 Microsoft.QuickAction.WiFi| IFIDwrite: 1 | IDEXmemread: 0
+  data1 = 00000000 | data2 = 00000000
+  rs1 = 0 | rs2 = 0 | IDEXrd = 0 | IFIDr1 = 0 | IFIDr2 = 0 | flush: 0
+  RegWEn = 1 | ALUsel = 0 | Bsel = 1 | WBsel = 00 | MemRW = 0 | immsel = 0 |
+EX Stage:
+  PC_EX   = 00000018 | instr_EX = 00102023, Bsel_EX = 1
+  a = 00000000 | b = 00000000 | a_fwd = 00000000 | b_fwd = 00000000 | ALU_out = 00000000 | IDEXrd: 00 | rs1_EX: 00 | rs2_EX: 01 | flush: 0
+  Eq = 0 | Lt = 1 | BrUn = 0, a_fwd = 00000000 | b_fwd = 00000000
+  RegWEn_EX = 0 | ALUsel_EX = 0 | Bsel_EX = 1 | Asel_EX  =0 |WBsel_EX = 00 | MemRW_EX = 1 | PCsel_cont = 0 | ForwardA: 00 | ForwardB: 00 | Imm_EX = 00000000
+MEM Stage:
+  PC_MEM   = 00000014 | instr_MEM = 00220233
+  ALU_out = 00000004 | dmem_out = 00000000 | func3 = 0 | addr = 00000004 | EXMEMrd =   4
+  RegWEn_MEM = 1 | WBsel_MEM = 01 | MemRW_MEM = 0 | PCsel_MEM = 0
+WB Stage:
+  PC_WB   = 00000004 | instr_WB = 00000000
+  ALU_WB = 00000000 | dmem_WB = 00000000 | DataW = 00000000
+  RegWEn_WB = 1 | WBsel_WB = 00 | PCsel_WB = 0 | MEMWBrd:  0 | RegWEn_WB: 1 
+Registers:
+  x 0 = 00000000
+  x 1 = 00000005
+  x 2 = 00000005
+  x 3 = xxxxxxxx
+  x 4 = ffffffff
+  x 5 = xxxxxxxx
+  x 6 = xxxxxxxx
+  x 7 = xxxxxxxx
+memory[0]: 00000000
+=============================================
+
+
+T=250000 ns
+=============================================
+IF Stage:
+  PC = 00000024 | instr = xxxxxxxx
+ID Stage:
+  PC_ID   = 00000020 | instr_ID = xxxxxxxx| Bsel = 0 | PCwrite: 1 | ContWrite: 1 Microsoft.QuickAction.WiFi| IFIDwrite: 1 | IDEXmemread: 1
+  data1 = xxxxxxxx | data2 = xxxxxxxx
+  rs1 = x | rs2 = x | IDEXrd = 5 | IFIDr1 = x | IFIDr2 = x | flush: 0
+  RegWEn = 0 | ALUsel = 0 | Bsel = 0 | WBsel = 00 | MemRW = 0 | immsel = 0 |
+EX Stage:
+  PC_EX   = 0000001c | instr_EX = 00002283, Bsel_EX = 1
+  a = 00000000 | b = 00000000 | a_fwd = 00000000 | b_fwd = 00000000 | ALU_out = 00000000 | IDEXrd: 05 | rs1_EX: 00 | rs2_EX: 00 | flush: 0
+  Eq = 1 | Lt = 0 | BrUn = 0, a_fwd = 00000000 | b_fwd = 00000000
+  RegWEn_EX = 1 | ALUsel_EX = 0 | Bsel_EX = 1 | Asel_EX  =0 |WBsel_EX = 00 | MemRW_EX = 0 | PCsel_cont = 0 | ForwardA: 00 | ForwardB: 00 | Imm_EX = 00000000
+MEM Stage:
+  PC_MEM   = 00000018 | instr_MEM = 00102023
+  ALU_out = 00000000 | dmem_out = 00000000 | func3 = 2 | addr = 00000000 | EXMEMrd =   0
+  RegWEn_MEM = 0 | WBsel_MEM = 00 | MemRW_MEM = 1 | PCsel_MEM = 0
+WB Stage:
+  PC_WB   = 00000018 | instr_WB = 00220233
+  ALU_WB = 00000004 | dmem_WB = 00000000 | DataW = 00000004
+  RegWEn_WB = 1 | WBsel_WB = 01 | PCsel_WB = 0 | MEMWBrd:  4 | RegWEn_WB: 1 
+Registers:
+  x 0 = 00000000
+  x 1 = 00000005
+  x 2 = 00000005
+  x 3 = xxxxxxxx
+  x 4 = 00000004
+  x 5 = xxxxxxxx
+  x 6 = xxxxxxxx
+  x 7 = xxxxxxxx
+memory[0]: 00000000
+=============================================
+
+
+T=270000 ns
+=============================================
+IF Stage:
+  PC = 00000028 | instr = xxxxxxxx
+ID Stage:
+  PC_ID   = 00000024 | instr_ID = xxxxxxxx| Bsel = 0 | PCwrite: 1 | ContWrite: 1 Microsoft.QuickAction.WiFi| IFIDwrite: 1 | IDEXmemread: 0
+  data1 = xxxxxxxx | data2 = xxxxxxxx
+  rs1 = x | rs2 = x | IDEXrd = x | IFIDr1 = x | IFIDr2 = x | flush: 0
+  RegWEn = 0 | ALUsel = 0 | Bsel = 0 | WBsel = 00 | MemRW = 0 | immsel = 0 |
+EX Stage:
+  PC_EX   = 00000020 | instr_EX = xxxxxxxx, Bsel_EX = 0
+  a = xxxxxxxx | b = xxxxxxxx | a_fwd = xxxxxxxx | b_fwd = xxxxxxxx | ALU_out = xxxxxxxx | IDEXrd: xx | rs1_EX: xx | rs2_EX: xx | flush: 0
+  Eq = x | Lt = x | BrUn = 0, a_fwd = xxxxxxxx | b_fwd = xxxxxxxx
+  RegWEn_EX = 0 | ALUsel_EX = 0 | Bsel_EX = 0 | Asel_EX  =0 |WBsel_EX = 00 | MemRW_EX = 0 | PCsel_cont = 0 | ForwardA: 00 | ForwardB: 00 | Imm_EX = xxxxxxxx
+MEM Stage:
+  PC_MEM   = 0000001c | instr_MEM = 00002283
+  ALU_out = 00000000 | dmem_out = 00000000 | func3 = 2 | addr = 00000000 | EXMEMrd =   5
+  RegWEn_MEM = 1 | WBsel_MEM = 00 | MemRW_MEM = 0 | PCsel_MEM = 0
+WB Stage:
+  PC_WB   = 0000001c | instr_WB = 00102023
+  ALU_WB = 00000000 | dmem_WB = 00000000 | DataW = 00000000
+  RegWEn_WB = 0 | WBsel_WB = 00 | PCsel_WB = 0 | MEMWBrd:  0 | RegWEn_WB: 0 
+Registers:
+  x 0 = 00000000
+  x 1 = 00000005
+  x 2 = 00000005
+  x 3 = xxxxxxxx
+  x 4 = 00000004
+  x 5 = xxxxxxxx
+  x 6 = xxxxxxxx
+  x 7 = xxxxxxxx
+memory[0]: 00000005
+=============================================
+
+
+T=290000 ns
+=============================================
+IF Stage:
+  PC = 0000002c | instr = xxxxxxxx
+ID Stage:
+  PC_ID   = 00000028 | instr_ID = xxxxxxxx| Bsel = 0 | PCwrite: 1 | ContWrite: 1 Microsoft.QuickAction.WiFi| IFIDwrite: 1 | IDEXmemread: 0
+  data1 = xxxxxxxx | data2 = xxxxxxxx
+  rs1 = x | rs2 = x | IDEXrd = x | IFIDr1 = x | IFIDr2 = x | flush: 0
+  RegWEn = 0 | ALUsel = 0 | Bsel = 0 | WBsel = 00 | MemRW = 0 | immsel = 0 |
+EX Stage:
+  PC_EX   = 00000024 | instr_EX = xxxxxxxx, Bsel_EX = 0
+  a = xxxxxxxx | b = xxxxxxxx | a_fwd = xxxxxxxx | b_fwd = xxxxxxxx | ALU_out = xxxxxxxx | IDEXrd: xx | rs1_EX: xx | rs2_EX: xx | flush: 0
+  Eq = x | Lt = x | BrUn = 0, a_fwd = xxxxxxxx | b_fwd = xxxxxxxx
+  RegWEn_EX = 0 | ALUsel_EX = 0 | Bsel_EX = 0 | Asel_EX  =0 |WBsel_EX = 00 | MemRW_EX = 0 | PCsel_cont = 0 | ForwardA: 00 | ForwardB: 00 | Imm_EX = xxxxxxxx
+MEM Stage:
+  PC_MEM   = 00000020 | instr_MEM = xxxxxxxx
+  ALU_out = xxxxxxxx | dmem_out = 00000005 | func3 = x | addr = xxxxxxxx | EXMEMrd =   x
+  RegWEn_MEM = 0 | WBsel_MEM = 00 | MemRW_MEM = 0 | PCsel_MEM = 0
+WB Stage:
+  PC_WB   = 00000020 | instr_WB = 00002283
+  ALU_WB = 00000000 | dmem_WB = 00000005 | DataW = 00000005
+  RegWEn_WB = 1 | WBsel_WB = 00 | PCsel_WB = 0 | MEMWBrd:  5 | RegWEn_WB: 1 
+Registers:
+  x 0 = 00000000
+  x 1 = 00000005
+  x 2 = 00000005
+  x 3 = xxxxxxxx
+  x 4 = 00000004
+  x 5 = 00000005
+  x 6 = xxxxxxxx
+  x 7 = xxxxxxxx
+memory[0]: 00000005
+=============================================
+
+
+T=310000 ns
+=============================================
+IF Stage:
+  PC = 00000030 | instr = xxxxxxxx
+ID Stage:
+  PC_ID   = 0000002c | instr_ID = xxxxxxxx| Bsel = 0 | PCwrite: 1 | ContWrite: 1 Microsoft.QuickAction.WiFi| IFIDwrite: 1 | IDEXmemread: 0
+  data1 = xxxxxxxx | data2 = xxxxxxxx
+  rs1 = x | rs2 = x | IDEXrd = x | IFIDr1 = x | IFIDr2 = x | flush: 0
+  RegWEn = 0 | ALUsel = 0 | Bsel = 0 | WBsel = 00 | MemRW = 0 | immsel = 0 |
+EX Stage:
+  PC_EX   = 00000028 | instr_EX = xxxxxxxx, Bsel_EX = 0
+  a = xxxxxxxx | b = xxxxxxxx | a_fwd = xxxxxxxx | b_fwd = xxxxxxxx | ALU_out = xxxxxxxx | IDEXrd: xx | rs1_EX: xx | rs2_EX: xx | flush: 0
+  Eq = x | Lt = x | BrUn = 0, a_fwd = xxxxxxxx | b_fwd = xxxxxxxx
+  RegWEn_EX = 0 | ALUsel_EX = 0 | Bsel_EX = 0 | Asel_EX  =0 |WBsel_EX = 00 | MemRW_EX = 0 | PCsel_cont = 0 | ForwardA: 00 | ForwardB: 00 | Imm_EX = xxxxxxxx
+MEM Stage:
+  PC_MEM   = 00000024 | instr_MEM = xxxxxxxx
+  ALU_out = xxxxxxxx | dmem_out = 00000000 | func3 = x | addr = xxxxxxxx | EXMEMrd =   x
+  RegWEn_MEM = 0 | WBsel_MEM = 00 | MemRW_MEM = 0 | PCsel_MEM = 0
+WB Stage:
+  PC_WB   = 00000024 | instr_WB = xxxxxxxx
+  ALU_WB = xxxxxxxx | dmem_WB = 00000000 | DataW = 00000000
+  RegWEn_WB = 0 | WBsel_WB = 00 | PCsel_WB = 0 | MEMWBrd:  x | RegWEn_WB: 0 
+Registers:
+  x 0 = 00000000
+  x 1 = 00000005
+  x 2 = 00000005
+  x 3 = xxxxxxxx
+  x 4 = 00000004
+  x 5 = 00000005
+  x 6 = xxxxxxxx
+  x 7 = xxxxxxxx
+memory[0]: 00000005
+=============================================
+
+
+T=330000 ns
+=============================================
+IF Stage:
+  PC = 00000034 | instr = xxxxxxxx
+ID Stage:
+  PC_ID   = 00000030 | instr_ID = xxxxxxxx| Bsel = 0 | PCwrite: 1 | ContWrite: 1 Microsoft.QuickAction.WiFi| IFIDwrite: 1 | IDEXmemread: 0
+  data1 = xxxxxxxx | data2 = xxxxxxxx
+  rs1 = x | rs2 = x | IDEXrd = x | IFIDr1 = x | IFIDr2 = x | flush: 0
+  RegWEn = 0 | ALUsel = 0 | Bsel = 0 | WBsel = 00 | MemRW = 0 | immsel = 0 |
+EX Stage:
+  PC_EX   = 0000002c | instr_EX = xxxxxxxx, Bsel_EX = 0
+  a = xxxxxxxx | b = xxxxxxxx | a_fwd = xxxxxxxx | b_fwd = xxxxxxxx | ALU_out = xxxxxxxx | IDEXrd: xx | rs1_EX: xx | rs2_EX: xx | flush: 0
+  Eq = x | Lt = x | BrUn = 0, a_fwd = xxxxxxxx | b_fwd = xxxxxxxx
+  RegWEn_EX = 0 | ALUsel_EX = 0 | Bsel_EX = 0 | Asel_EX  =0 |WBsel_EX = 00 | MemRW_EX = 0 | PCsel_cont = 0 | ForwardA: 00 | ForwardB: 00 | Imm_EX = xxxxxxxx
+MEM Stage:
+  PC_MEM   = 00000028 | instr_MEM = xxxxxxxx
+  ALU_out = xxxxxxxx | dmem_out = 00000000 | func3 = x | addr = xxxxxxxx | EXMEMrd =   x
+  RegWEn_MEM = 0 | WBsel_MEM = 00 | MemRW_MEM = 0 | PCsel_MEM = 0
+WB Stage:
+  PC_WB   = 00000028 | instr_WB = xxxxxxxx
+  ALU_WB = xxxxxxxx | dmem_WB = 00000000 | DataW = 00000000
+  RegWEn_WB = 0 | WBsel_WB = 00 | PCsel_WB = 0 | MEMWBrd:  x | RegWEn_WB: 0 
+Registers:
+  x 0 = 00000000
+  x 1 = 00000005
+  x 2 = 00000005
+  x 3 = xxxxxxxx
+  x 4 = 00000004
+  x 5 = 00000005
+  x 6 = xxxxxxxx
+  x 7 = xxxxxxxx
+memory[0]: 00000005
+=============================================
+
+
+T=350000 ns
+=============================================
+IF Stage:
+  PC = 00000038 | instr = xxxxxxxx
+ID Stage:
+  PC_ID   = 00000034 | instr_ID = xxxxxxxx| Bsel = 0 | PCwrite: 1 | ContWrite: 1 Microsoft.QuickAction.WiFi| IFIDwrite: 1 | IDEXmemread: 0
+  data1 = xxxxxxxx | data2 = xxxxxxxx
+  rs1 = x | rs2 = x | IDEXrd = x | IFIDr1 = x | IFIDr2 = x | flush: 0
+  RegWEn = 0 | ALUsel = 0 | Bsel = 0 | WBsel = 00 | MemRW = 0 | immsel = 0 |
+EX Stage:
+  PC_EX   = 00000030 | instr_EX = xxxxxxxx, Bsel_EX = 0
+  a = xxxxxxxx | b = xxxxxxxx | a_fwd = xxxxxxxx | b_fwd = xxxxxxxx | ALU_out = xxxxxxxx | IDEXrd: xx | rs1_EX: xx | rs2_EX: xx | flush: 0
+  Eq = x | Lt = x | BrUn = 0, a_fwd = xxxxxxxx | b_fwd = xxxxxxxx
+  RegWEn_EX = 0 | ALUsel_EX = 0 | Bsel_EX = 0 | Asel_EX  =0 |WBsel_EX = 00 | MemRW_EX = 0 | PCsel_cont = 0 | ForwardA: 00 | ForwardB: 00 | Imm_EX = xxxxxxxx
+MEM Stage:
+  PC_MEM   = 0000002c | instr_MEM = xxxxxxxx
+  ALU_out = xxxxxxxx | dmem_out = 00000000 | func3 = x | addr = xxxxxxxx | EXMEMrd =   x
+  RegWEn_MEM = 0 | WBsel_MEM = 00 | MemRW_MEM = 0 | PCsel_MEM = 0
+WB Stage:
+  PC_WB   = 0000002c | instr_WB = xxxxxxxx
+  ALU_WB = xxxxxxxx | dmem_WB = 00000000 | DataW = 00000000
+  RegWEn_WB = 0 | WBsel_WB = 00 | PCsel_WB = 0 | MEMWBrd:  x | RegWEn_WB: 0 
+Registers:
+  x 0 = 00000000
+  x 1 = 00000005
+  x 2 = 00000005
+  x 3 = xxxxxxxx
+  x 4 = 00000004
+  x 5 = 00000005
+  x 6 = xxxxxxxx
+  x 7 = xxxxxxxx
+memory[0]: 00000005
+=============================================
+
+
+T=370000 ns
+=============================================
+IF Stage:
+  PC = 0000003c | instr = xxxxxxxx
+ID Stage:
+  PC_ID   = 00000038 | instr_ID = xxxxxxxx| Bsel = 0 | PCwrite: 1 | ContWrite: 1 Microsoft.QuickAction.WiFi| IFIDwrite: 1 | IDEXmemread: 0
+  data1 = xxxxxxxx | data2 = xxxxxxxx
+  rs1 = x | rs2 = x | IDEXrd = x | IFIDr1 = x | IFIDr2 = x | flush: 0
+  RegWEn = 0 | ALUsel = 0 | Bsel = 0 | WBsel = 00 | MemRW = 0 | immsel = 0 |
+EX Stage:
+  PC_EX   = 00000034 | instr_EX = xxxxxxxx, Bsel_EX = 0
+  a = xxxxxxxx | b = xxxxxxxx | a_fwd = xxxxxxxx | b_fwd = xxxxxxxx | ALU_out = xxxxxxxx | IDEXrd: xx | rs1_EX: xx | rs2_EX: xx | flush: 0
+  Eq = x | Lt = x | BrUn = 0, a_fwd = xxxxxxxx | b_fwd = xxxxxxxx
+  RegWEn_EX = 0 | ALUsel_EX = 0 | Bsel_EX = 0 | Asel_EX  =0 |WBsel_EX = 00 | MemRW_EX = 0 | PCsel_cont = 0 | ForwardA: 00 | ForwardB: 00 | Imm_EX = xxxxxxxx
+MEM Stage:
+  PC_MEM   = 00000030 | instr_MEM = xxxxxxxx
+  ALU_out = xxxxxxxx | dmem_out = 00000000 | func3 = x | addr = xxxxxxxx | EXMEMrd =   x
+  RegWEn_MEM = 0 | WBsel_MEM = 00 | MemRW_MEM = 0 | PCsel_MEM = 0
+WB Stage:
+  PC_WB   = 00000030 | instr_WB = xxxxxxxx
+  ALU_WB = xxxxxxxx | dmem_WB = 00000000 | DataW = 00000000
+  RegWEn_WB = 0 | WBsel_WB = 00 | PCsel_WB = 0 | MEMWBrd:  x | RegWEn_WB: 0 
+Registers:
+  x 0 = 00000000
+  x 1 = 00000005
+  x 2 = 00000005
+  x 3 = xxxxxxxx
+  x 4 = 00000004
+  x 5 = 00000005
+  x 6 = xxxxxxxx
+  x 7 = xxxxxxxx
+memory[0]: 00000005
+=============================================
+
+
+T=390000 ns
+=============================================
+IF Stage:
+  PC = 00000040 | instr = 00500093
+ID Stage:
+  PC_ID   = 0000003c | instr_ID = xxxxxxxx| Bsel = 0 | PCwrite: 1 | ContWrite: 1 Microsoft.QuickAction.WiFi| IFIDwrite: 1 | IDEXmemread: 0
+  data1 = xxxxxxxx | data2 = xxxxxxxx
+  rs1 = x | rs2 = x | IDEXrd = x | IFIDr1 = x | IFIDr2 = x | flush: 0
+  RegWEn = 0 | ALUsel = 0 | Bsel = 0 | WBsel = 00 | MemRW = 0 | immsel = 0 |
+EX Stage:
+  PC_EX   = 00000038 | instr_EX = xxxxxxxx, Bsel_EX = 0
+  a = xxxxxxxx | b = xxxxxxxx | a_fwd = xxxxxxxx | b_fwd = xxxxxxxx | ALU_out = xxxxxxxx | IDEXrd: xx | rs1_EX: xx | rs2_EX: xx | flush: 0
+  Eq = x | Lt = x | BrUn = 0, a_fwd = xxxxxxxx | b_fwd = xxxxxxxx
+  RegWEn_EX = 0 | ALUsel_EX = 0 | Bsel_EX = 0 | Asel_EX  =0 |WBsel_EX = 00 | MemRW_EX = 0 | PCsel_cont = 0 | ForwardA: 00 | ForwardB: 00 | Imm_EX = xxxxxxxx
+MEM Stage:
+  PC_MEM   = 00000034 | instr_MEM = xxxxxxxx
+  ALU_out = xxxxxxxx | dmem_out = 00000000 | func3 = x | addr = xxxxxxxx | EXMEMrd =   x
+  RegWEn_MEM = 0 | WBsel_MEM = 00 | MemRW_MEM = 0 | PCsel_MEM = 0
+WB Stage:
+  PC_WB   = 00000034 | instr_WB = xxxxxxxx
+  ALU_WB = xxxxxxxx | dmem_WB = 00000000 | DataW = 00000000
+  RegWEn_WB = 0 | WBsel_WB = 00 | PCsel_WB = 0 | MEMWBrd:  x | RegWEn_WB: 0 
+Registers:
+  x 0 = 00000000
+  x 1 = 00000005
+  x 2 = 00000005
+  x 3 = xxxxxxxx
+  x 4 = 00000004
+  x 5 = 00000005
+  x 6 = xxxxxxxx
+  x 7 = xxxxxxxx
+memory[0]: 00000005
+=============================================
+
+
+T=410000 ns
+=============================================
+IF Stage:
+  PC = 00000044 | instr = fff00213
+ID Stage:
+  PC_ID   = 00000040 | instr_ID = 00500093| Bsel = 1 | PCwrite: 1 | ContWrite: 1 Microsoft.QuickAction.WiFi| IFIDwrite: 1 | IDEXmemread: 0
+  data1 = 00000000 | data2 = 00000005
+  rs1 = 0 | rs2 = 5 | IDEXrd = x | IFIDr1 = 0 | IFIDr2 = 5 | flush: 0
+  RegWEn = 1 | ALUsel = 0 | Bsel = 1 | WBsel = 01 | MemRW = 0 | immsel = 0 |
+EX Stage:
+  PC_EX   = 0000003c | instr_EX = xxxxxxxx, Bsel_EX = 0
+  a = xxxxxxxx | b = xxxxxxxx | a_fwd = xxxxxxxx | b_fwd = xxxxxxxx | ALU_out = xxxxxxxx | IDEXrd: xx | rs1_EX: xx | rs2_EX: xx | flush: 0
+  Eq = x | Lt = x | BrUn = 0, a_fwd = xxxxxxxx | b_fwd = xxxxxxxx
+  RegWEn_EX = 0 | ALUsel_EX = 0 | Bsel_EX = 0 | Asel_EX  =0 |WBsel_EX = 00 | MemRW_EX = 0 | PCsel_cont = 0 | ForwardA: 00 | ForwardB: 00 | Imm_EX = xxxxxxxx
+MEM Stage:
+  PC_MEM   = 00000038 | instr_MEM = xxxxxxxx
+  ALU_out = xxxxxxxx | dmem_out = 00000000 | func3 = x | addr = xxxxxxxx | EXMEMrd =   x
+  RegWEn_MEM = 0 | WBsel_MEM = 00 | MemRW_MEM = 0 | PCsel_MEM = 0
+WB Stage:
+  PC_WB   = 00000038 | instr_WB = xxxxxxxx
+  ALU_WB = xxxxxxxx | dmem_WB = 00000000 | DataW = 00000000
+  RegWEn_WB = 0 | WBsel_WB = 00 | PCsel_WB = 0 | MEMWBrd:  x | RegWEn_WB: 0 
+Registers:
+  x 0 = 00000000
+  x 1 = 00000005
+  x 2 = 00000005
+  x 3 = xxxxxxxx
+  x 4 = 00000004
+  x 5 = 00000005
+  x 6 = xxxxxxxx
+  x 7 = xxxxxxxx
+memory[0]: 00000005
+=============================================
+
+
+T=430000 ns
+=============================================
+IF Stage:
+  PC = 00000048 | instr = 00500113
+ID Stage:
+  PC_ID   = 00000044 | instr_ID = fff00213| Bsel = 1 | PCwrite: 1 | ContWrite: 1 Microsoft.QuickAction.WiFi| IFIDwrite: 1 | IDEXmemread: 0
+  data1 = 00000000 | data2 = xxxxxxxx
+  rs1 = 0 | rs2 = 31 | IDEXrd = 1 | IFIDr1 = 0 | IFIDr2 = 31 | flush: 0
+  RegWEn = 1 | ALUsel = 0 | Bsel = 1 | WBsel = 01 | MemRW = 0 | immsel = 0 |
+EX Stage:
+  PC_EX   = 00000040 | instr_EX = 00500093, Bsel_EX = 1
+  a = 00000000 | b = 00000005 | a_fwd = 00000000 | b_fwd = 00000005 | ALU_out = 00000005 | IDEXrd: 01 | rs1_EX: 00 | rs2_EX: 05 | flush: 0
+  Eq = 0 | Lt = 1 | BrUn = 0, a_fwd = 00000000 | b_fwd = 00000005
+  RegWEn_EX = 1 | ALUsel_EX = 0 | Bsel_EX = 1 | Asel_EX  =0 |WBsel_EX = 01 | MemRW_EX = 0 | PCsel_cont = 0 | ForwardA: 00 | ForwardB: 00 | Imm_EX = 00000005
+MEM Stage:
+  PC_MEM   = 0000003c | instr_MEM = xxxxxxxx
+  ALU_out = xxxxxxxx | dmem_out = 00000000 | func3 = x | addr = xxxxxxxx | EXMEMrd =   x
+  RegWEn_MEM = 0 | WBsel_MEM = 00 | MemRW_MEM = 0 | PCsel_MEM = 0
+WB Stage:
+  PC_WB   = 0000003c | instr_WB = xxxxxxxx
+  ALU_WB = xxxxxxxx | dmem_WB = 00000000 | DataW = 00000000
+  RegWEn_WB = 0 | WBsel_WB = 00 | PCsel_WB = 0 | MEMWBrd:  x | RegWEn_WB: 0 
+Registers:
+  x 0 = 00000000
+  x 1 = 00000005
+  x 2 = 00000005
+  x 3 = xxxxxxxx
+  x 4 = 00000004
+  x 5 = 00000005
+  x 6 = xxxxxxxx
+  x 7 = xxxxxxxx
+memory[0]: 00000005
+=============================================
+
+
+T=450000 ns
+=============================================
+IF Stage:
+  PC = 0000004c | instr = 00110463
+ID Stage:
+  PC_ID   = 00000048 | instr_ID = 00500113| Bsel = 1 | PCwrite: 1 | ContWrite: 1 Microsoft.QuickAction.WiFi| IFIDwrite: 1 | IDEXmemread: 0
+  data1 = 00000000 | data2 = 00000005
+  rs1 = 0 | rs2 = 5 | IDEXrd = 4 | IFIDr1 = 0 | IFIDr2 = 5 | flush: 0
+  RegWEn = 1 | ALUsel = 0 | Bsel = 1 | WBsel = 01 | MemRW = 0 | immsel = 0 |
+EX Stage:
+  PC_EX   = 00000044 | instr_EX = fff00213, Bsel_EX = 1
+  a = 00000000 | b = ffffffff | a_fwd = 00000000 | b_fwd = ffffffff | ALU_out = ffffffff | IDEXrd: 04 | rs1_EX: 00 | rs2_EX: 1f | flush: 0
+  Eq = x | Lt = x | BrUn = 0, a_fwd = 00000000 | b_fwd = ffffffff
+  RegWEn_EX = 1 | ALUsel_EX = 0 | Bsel_EX = 1 | Asel_EX  =0 |WBsel_EX = 01 | MemRW_EX = 0 | PCsel_cont = 0 | ForwardA: 00 | ForwardB: 00 | Imm_EX = ffffffff
+MEM Stage:
+  PC_MEM   = 00000040 | instr_MEM = 00500093
+  ALU_out = 00000005 | dmem_out = 00000000 | func3 = 0 | addr = 00000005 | EXMEMrd =   1
+  RegWEn_MEM = 1 | WBsel_MEM = 01 | MemRW_MEM = 0 | PCsel_MEM = 0
+WB Stage:
+  PC_WB   = 00000040 | instr_WB = xxxxxxxx
+  ALU_WB = xxxxxxxx | dmem_WB = 00000000 | DataW = 00000000
+  RegWEn_WB = 0 | WBsel_WB = 00 | PCsel_WB = 0 | MEMWBrd:  x | RegWEn_WB: 0 
+Registers:
+  x 0 = 00000000
+  x 1 = 00000005
+  x 2 = 00000005
+  x 3 = xxxxxxxx
+  x 4 = 00000004
+  x 5 = 00000005
+  x 6 = xxxxxxxx
+  x 7 = xxxxxxxx
+memory[0]: 00000005
+=============================================
+
+
+T=470000 ns
+=============================================
+IF Stage:
+  PC = 00000050 | instr = 002081b3
+ID Stage:
+  PC_ID   = 0000004c | instr_ID = 00110463| Bsel = 1 | PCwrite: 1 | ContWrite: 1 Microsoft.QuickAction.WiFi| IFIDwrite: 1 | IDEXmemread: 0
+  data1 = 00000005 | data2 = 00000005
+  rs1 = 2 | rs2 = 1 | IDEXrd = 2 | IFIDr1 = 2 | IFIDr2 = 1 | flush: 0
+  RegWEn = 0 | ALUsel = 0 | Bsel = 1 | WBsel = 00 | MemRW = 0 | immsel = 3 |
+EX Stage:
+  PC_EX   = 00000048 | instr_EX = 00500113, Bsel_EX = 1
+  a = 00000000 | b = 00000005 | a_fwd = 00000000 | b_fwd = 00000005 | ALU_out = 00000005 | IDEXrd: 02 | rs1_EX: 00 | rs2_EX: 05 | flush: 0
+  Eq = 0 | Lt = 1 | BrUn = 0, a_fwd = 00000000 | b_fwd = 00000005
+  RegWEn_EX = 1 | ALUsel_EX = 0 | Bsel_EX = 1 | Asel_EX  =0 |WBsel_EX = 01 | MemRW_EX = 0 | PCsel_cont = 0 | ForwardA: 00 | ForwardB: 00 | Imm_EX = 00000005
+MEM Stage:
+  PC_MEM   = 00000044 | instr_MEM = fff00213
+  ALU_out = ffffffff | dmem_out = 00000000 | func3 = 0 | addr = ffffffff | EXMEMrd =   4
+  RegWEn_MEM = 1 | WBsel_MEM = 01 | MemRW_MEM = 0 | PCsel_MEM = 0
+WB Stage:
+  PC_WB   = 00000044 | instr_WB = 00500093
+  ALU_WB = 00000005 | dmem_WB = 00000000 | DataW = 00000005
+  RegWEn_WB = 1 | WBsel_WB = 01 | PCsel_WB = 0 | MEMWBrd:  1 | RegWEn_WB: 1 
+Registers:
+  x 0 = 00000000
+  x 1 = 00000005
+  x 2 = 00000005
+  x 3 = xxxxxxxx
+  x 4 = 00000004
+  x 5 = 00000005
+  x 6 = xxxxxxxx
+  x 7 = xxxxxxxx
+memory[0]: 00000005
+=============================================
+
+
+T=490000 ns
+=============================================
+IF Stage:
+  PC = 00000054 | instr = 00220233
+ID Stage:
+  PC_ID   = 00000050 | instr_ID = 002081b3| Bsel = 0 | PCwrite: 1 | ContWrite: 1 Microsoft.QuickAction.WiFi| IFIDwrite: 1 | IDEXmemread: 0
+  data1 = 00000005 | data2 = 00000005
+  rs1 = 1 | rs2 = 2 | IDEXrd = 8 | IFIDr1 = 1 | IFIDr2 = 2 | flush: 1
+  RegWEn = 1 | ALUsel = 0 | Bsel = 0 | WBsel = 01 | MemRW = 0 | immsel = 0 |
+EX Stage:
+  PC_EX   = 0000004c | instr_EX = 00110463, Bsel_EX = 1
+  a = 0000004c | b = 00000008 | a_fwd = 00000005 | b_fwd = 00000008 | ALU_out = 00000054 | IDEXrd: 08 | rs1_EX: 02 | rs2_EX: 01 | flush: 1
+  Eq = 1 | Lt = 0 | BrUn = 0, a_fwd = 00000005 | b_fwd = 00000008
+  RegWEn_EX = 0 | ALUsel_EX = 0 | Bsel_EX = 1 | Asel_EX  =1 |WBsel_EX = 00 | MemRW_EX = 0 | PCsel_cont = 1 | ForwardA: 10 | ForwardB: 00 | Imm_EX = 00000008
+MEM Stage:
+  PC_MEM   = 00000048 | instr_MEM = 00500113
+  ALU_out = 00000005 | dmem_out = xxxxxxxx | func3 = 0 | addr = 00000005 | EXMEMrd =   2
+  RegWEn_MEM = 1 | WBsel_MEM = 01 | MemRW_MEM = 0 | PCsel_MEM = 0
+WB Stage:
+  PC_WB   = 00000048 | instr_WB = fff00213
+  ALU_WB = ffffffff | dmem_WB = xxxxxxxx | DataW = ffffffff
+  RegWEn_WB = 1 | WBsel_WB = 01 | PCsel_WB = 0 | MEMWBrd:  4 | RegWEn_WB: 1 
+Registers:
+  x 0 = 00000000
+  x 1 = 00000005
+  x 2 = 00000005
+  x 3 = xxxxxxxx
+  x 4 = ffffffff
+  x 5 = 00000005
+  x 6 = xxxxxxxx
+  x 7 = xxxxxxxx
+memory[0]: 00000005
+=============================================
+
+$finish called at time : 500 ns : File "C:/Users/alima/OneDrive/Documents/quartus supreme/module4/tb_top.sv" Line 68
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1620.090 ; gain = 0.000
